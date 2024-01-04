@@ -84,7 +84,7 @@ def plot_db_2d(model, X, y, title = "Title", xlabel = "Feature 1", ylabel = "Fea
     # Reshape the predictions to the shape of the meshgrid
     Z = Z.reshape(xx.shape)
     
-    plt.contourf(xx, yy, Z, cmap=cm.jet, alpha = 0.8)
+    plt.contourf(xx, yy, Z, cmap=cm.jet, alpha = 0.3)
 
     # Plot the data points
     plt.scatter(X[:, 0], X[:, 1], c=y)
